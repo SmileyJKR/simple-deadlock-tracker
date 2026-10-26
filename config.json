@@ -1,0 +1,11 @@
+{
+  "min_matches": 1000,
+  "weights": { "winrate": 0.7, "pickrate": 0.3 },
+  "tiers": [
+    { "name": "S", "top_pct": 0.10, "color": "#ffb347" },
+    { "name": "A", "top_pct": 0.25, "color": "#7ec850" },
+    { "name": "B", "top_pct": 0.55, "color": "#4da3ff" },
+    { "name": "C", "top_pct": 0.85, "color": "#9aa0a6" },
+    { "name": "D", "top_pct": 1.00, "color": "#ff5d5d" }
+  ]
+}
