@@ -1,0 +1,558 @@
+{
+ "demo": false,
+ "from": "2026-10-18",
+ "to": "2026-10-20",
+ "patch": "09-29-2026",
+ "winrate_movers": [
+  {
+   "name": "Deadman Danny",
+   "delta": 2.73,
+   "from": 42.52,
+   "to": 45.25
+  },
+  {
+   "name": "Violet",
+   "delta": 2.34,
+   "from": 47.43,
+   "to": 49.77
+  },
+  {
+   "name": "Solomon",
+   "delta": 0.32,
+   "from": 45.4,
+   "to": 45.72
+  },
+  {
+   "name": "Venator",
+   "delta": 0.22,
+   "from": 46.89,
+   "to": 47.11
+  },
+  {
+   "name": "Bebop",
+   "delta": 0.18,
+   "from": 47.36,
+   "to": 47.54
+  },
+  {
+   "name": "Graves",
+   "delta": 0.17,
+   "from": 56.64,
+   "to": 56.81
+  },
+  {
+   "name": "Wraith",
+   "delta": 0.12,
+   "from": 50.58,
+   "to": 50.7
+  },
+  {
+   "name": "Kelvin",
+   "delta": 0.12,
+   "from": 54.02,
+   "to": 54.14
+  },
+  {
+   "name": "Baba",
+   "delta": 0.12,
+   "from": 52.61,
+   "to": 52.73
+  },
+  {
+   "name": "Ivy",
+   "delta": 0.1,
+   "from": 52.98,
+   "to": 53.08
+  },
+  {
+   "name": "Viscous",
+   "delta": 0.08,
+   "from": 45.76,
+   "to": 45.84
+  },
+  {
+   "name": "Mirage",
+   "delta": 0.07,
+   "from": 44.53,
+   "to": 44.6
+  },
+  {
+   "name": "Paradox",
+   "delta": 0.04,
+   "from": 46.0,
+   "to": 46.04
+  },
+  {
+   "name": "McGinnis",
+   "delta": 0.03,
+   "from": 48.12,
+   "to": 48.15
+  },
+  {
+   "name": "Sinclair",
+   "delta": 0.02,
+   "from": 45.84,
+   "to": 45.86
+  },
+  {
+   "name": "The Doorman",
+   "delta": 0.0,
+   "from": 45.96,
+   "to": 45.96
+  },
+  {
+   "name": "Infernus",
+   "delta": -0.01,
+   "from": 48.94,
+   "to": 48.93
+  },
+  {
+   "name": "Lash",
+   "delta": -0.01,
+   "from": 51.13,
+   "to": 51.12
+  },
+  {
+   "name": "Celeste",
+   "delta": -0.01,
+   "from": 49.02,
+   "to": 49.01
+  },
+  {
+   "name": "Abrams",
+   "delta": -0.02,
+   "from": 51.04,
+   "to": 51.02
+  },
+  {
+   "name": "Drifter",
+   "delta": -0.02,
+   "from": 50.13,
+   "to": 50.11
+  },
+  {
+   "name": "Paige",
+   "delta": -0.02,
+   "from": 56.48,
+   "to": 56.46
+  },
+  {
+   "name": "Lady Geist",
+   "delta": -0.04,
+   "from": 51.06,
+   "to": 51.02
+  },
+  {
+   "name": "Haze",
+   "delta": -0.06,
+   "from": 54.21,
+   "to": 54.15
+  },
+  {
+   "name": "Grey Talon",
+   "delta": -0.09,
+   "from": 47.42,
+   "to": 47.33
+  },
+  {
+   "name": "Seven",
+   "delta": -0.1,
+   "from": 55.21,
+   "to": 55.11
+  },
+  {
+   "name": "Mina",
+   "delta": -0.1,
+   "from": 46.64,
+   "to": 46.54
+  },
+  {
+   "name": "Victor",
+   "delta": -0.11,
+   "from": 54.46,
+   "to": 54.35
+  },
+  {
+   "name": "Dynamo",
+   "delta": -0.12,
+   "from": 52.35,
+   "to": 52.23
+  },
+  {
+   "name": "Billy",
+   "delta": -0.12,
+   "from": 47.56,
+   "to": 47.44
+  },
+  {
+   "name": "Silver",
+   "delta": -0.13,
+   "from": 46.12,
+   "to": 45.99
+  },
+  {
+   "name": "Yamato",
+   "delta": -0.14,
+   "from": 48.35,
+   "to": 48.21
+  },
+  {
+   "name": "Rat King",
+   "delta": -0.14,
+   "from": 57.57,
+   "to": 57.43
+  },
+  {
+   "name": "Apollo",
+   "delta": -0.15,
+   "from": 49.83,
+   "to": 49.68
+  },
+  {
+   "name": "Rem",
+   "delta": -0.15,
+   "from": 47.03,
+   "to": 46.88
+  },
+  {
+   "name": "Pocket",
+   "delta": -0.17,
+   "from": 45.32,
+   "to": 45.15
+  },
+  {
+   "name": "Shiv",
+   "delta": -0.18,
+   "from": 44.74,
+   "to": 44.56
+  },
+  {
+   "name": "Mo & Krill",
+   "delta": -0.22,
+   "from": 50.74,
+   "to": 50.52
+  },
+  {
+   "name": "Warden",
+   "delta": -0.22,
+   "from": 46.64,
+   "to": 46.42
+  },
+  {
+   "name": "Vindicta",
+   "delta": -0.25,
+   "from": 50.2,
+   "to": 49.95
+  },
+  {
+   "name": "Holliday",
+   "delta": -0.26,
+   "from": 48.08,
+   "to": 47.82
+  },
+  {
+   "name": "Vyper",
+   "delta": -0.3,
+   "from": 48.09,
+   "to": 47.79
+  },
+  {
+   "name": "Calico",
+   "delta": -0.35,
+   "from": 49.6,
+   "to": 49.25
+  }
+ ],
+ "pickrate_movers": [
+  {
+   "name": "Violet",
+   "delta": 0.82,
+   "from": 0.12,
+   "to": 0.94
+  },
+  {
+   "name": "Deadman Danny",
+   "delta": 0.76,
+   "from": 0.94,
+   "to": 1.7
+  },
+  {
+   "name": "Rat King",
+   "delta": 0.46,
+   "from": 4.3,
+   "to": 4.76
+  },
+  {
+   "name": "Solomon",
+   "delta": 0.3,
+   "from": 1.66,
+   "to": 1.96
+  },
+  {
+   "name": "Baba",
+   "delta": 0.11,
+   "from": 2.01,
+   "to": 2.12
+  },
+  {
+   "name": "Graves",
+   "delta": 0.04,
+   "from": 3.43,
+   "to": 3.47
+  },
+  {
+   "name": "Celeste",
+   "delta": 0.04,
+   "from": 2.56,
+   "to": 2.6
+  },
+  {
+   "name": "Vindicta",
+   "delta": 0.0,
+   "from": 2.69,
+   "to": 2.69
+  },
+  {
+   "name": "Wraith",
+   "delta": -0.01,
+   "from": 2.7,
+   "to": 2.69
+  },
+  {
+   "name": "Grey Talon",
+   "delta": -0.01,
+   "from": 1.37,
+   "to": 1.36
+  },
+  {
+   "name": "Apollo",
+   "delta": -0.01,
+   "from": 2.28,
+   "to": 2.27
+  },
+  {
+   "name": "Seven",
+   "delta": -0.02,
+   "from": 2.84,
+   "to": 2.82
+  },
+  {
+   "name": "Mina",
+   "delta": -0.02,
+   "from": 3.46,
+   "to": 3.44
+  },
+  {
+   "name": "Victor",
+   "delta": -0.02,
+   "from": 2.49,
+   "to": 2.47
+  },
+  {
+   "name": "Yamato",
+   "delta": -0.03,
+   "from": 2.28,
+   "to": 2.25
+  },
+  {
+   "name": "McGinnis",
+   "delta": -0.04,
+   "from": 1.14,
+   "to": 1.1
+  },
+  {
+   "name": "Holliday",
+   "delta": -0.04,
+   "from": 1.87,
+   "to": 1.83
+  },
+  {
+   "name": "The Doorman",
+   "delta": -0.04,
+   "from": 1.58,
+   "to": 1.54
+  },
+  {
+   "name": "Mirage",
+   "delta": -0.05,
+   "from": 1.17,
+   "to": 1.12
+  },
+  {
+   "name": "Vyper",
+   "delta": -0.05,
+   "from": 1.39,
+   "to": 1.34
+  },
+  {
+   "name": "Billy",
+   "delta": -0.05,
+   "from": 2.6,
+   "to": 2.55
+  },
+  {
+   "name": "Kelvin",
+   "delta": -0.06,
+   "from": 1.37,
+   "to": 1.31
+  },
+  {
+   "name": "Viscous",
+   "delta": -0.06,
+   "from": 1.31,
+   "to": 1.25
+  },
+  {
+   "name": "Rem",
+   "delta": -0.06,
+   "from": 3.19,
+   "to": 3.13
+  },
+  {
+   "name": "Silver",
+   "delta": -0.06,
+   "from": 2.55,
+   "to": 2.49
+  },
+  {
+   "name": "Abrams",
+   "delta": -0.07,
+   "from": 2.46,
+   "to": 2.39
+  },
+  {
+   "name": "Paige",
+   "delta": -0.07,
+   "from": 3.09,
+   "to": 3.02
+  },
+  {
+   "name": "Ivy",
+   "delta": -0.08,
+   "from": 2.08,
+   "to": 2.0
+  },
+  {
+   "name": "Paradox",
+   "delta": -0.09,
+   "from": 2.36,
+   "to": 2.27
+  },
+  {
+   "name": "Dynamo",
+   "delta": -0.09,
+   "from": 2.19,
+   "to": 2.1
+  },
+  {
+   "name": "Warden",
+   "delta": -0.09,
+   "from": 1.1,
+   "to": 1.01
+  },
+  {
+   "name": "Pocket",
+   "delta": -0.09,
+   "from": 1.87,
+   "to": 1.78
+  },
+  {
+   "name": "Infernus",
+   "delta": -0.1,
+   "from": 3.43,
+   "to": 3.33
+  },
+  {
+   "name": "Lady Geist",
+   "delta": -0.1,
+   "from": 2.23,
+   "to": 2.13
+  },
+  {
+   "name": "Sinclair",
+   "delta": -0.1,
+   "from": 1.34,
+   "to": 1.24
+  },
+  {
+   "name": "Haze",
+   "delta": -0.11,
+   "from": 4.23,
+   "to": 4.12
+  },
+  {
+   "name": "Bebop",
+   "delta": -0.11,
+   "from": 3.39,
+   "to": 3.28
+  },
+  {
+   "name": "Drifter",
+   "delta": -0.11,
+   "from": 3.44,
+   "to": 3.33
+  },
+  {
+   "name": "Mo & Krill",
+   "delta": -0.12,
+   "from": 2.18,
+   "to": 2.06
+  },
+  {
+   "name": "Venator",
+   "delta": -0.12,
+   "from": 3.68,
+   "to": 3.56
+  },
+  {
+   "name": "Calico",
+   "delta": -0.13,
+   "from": 1.74,
+   "to": 1.61
+  },
+  {
+   "name": "Shiv",
+   "delta": -0.14,
+   "from": 2.5,
+   "to": 2.36
+  },
+  {
+   "name": "Lash",
+   "delta": -0.16,
+   "from": 3.39,
+   "to": 3.23
+  }
+ ],
+ "tier_changes": [
+  {
+   "name": "Dynamo",
+   "from": "A",
+   "to": "B"
+  },
+  {
+   "name": "Bebop",
+   "from": "C",
+   "to": "B"
+  },
+  {
+   "name": "Shiv",
+   "from": "C",
+   "to": "D"
+  },
+  {
+   "name": "Billy",
+   "from": "B",
+   "to": "C"
+  },
+  {
+   "name": "Solomon",
+   "from": "D",
+   "to": "C"
+  },
+  {
+   "name": "Baba",
+   "from": "B",
+   "to": "A"
+  }
+ ]
+}

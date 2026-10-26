@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deadlock Tier Tracker</title>
+<style>
+  :root {
+    --bg: #0b0e14; --panel: #12161f; --panel2: #1a2030; --text: #e6e9ef;
+    --muted: #8b93a7; --line: #232a3b;
+    --s: #ffb347; --a: #7ec850; --b: #4da3ff; --c: #9aa0a6; --d: #ff5d5d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+  header { padding: 26px 32px 18px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 22px; letter-spacing: 3px; font-weight: 700; }
+  h1 span { color: var(--s); }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .tabs { display: flex; gap: 8px; padding: 18px 32px 0; }
+  .tab { padding: 10px 18px; background: var(--panel); border: 1px solid var(--line); border-bottom: none; border-radius: 8px 8px 0 0; cursor: pointer; color: var(--muted); font-size: 14px; user-select: none; }
+  .tab.active { color: var(--text); background: var(--panel2); font-weight: 600; }
+  .panel { margin: 0 32px 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 0 8px 8px 8px; padding: 20px; display: none; }
+  .panel.active { display: block; }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; align-items: center; }
+  input, select { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; font-size: 13px; outline: none; }
+  option { background: var(--panel2); color: var(--text); }
+  input:focus, select:focus { border-color: var(--b); }
+  #search { flex: 1; min-width: 160px; }
+  .tierbtn { background: var(--panel2); border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 8px 14px; font-size: 13px; cursor: pointer; font-weight: 600; }
+  .tierbtn.active { color: var(--text); border-color: var(--text); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  .card { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; transition: transform .12s ease, border-color .12s ease; }
+  .card:hover { transform: translateY(-2px); border-color: #3a4560; }
+  .card .imgwrap { aspect-ratio: 280 / 380; background: #0e1220; }
+  .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card .body { padding: 12px 14px 14px; }
+  .name { font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 10px; color: #0b0e14; flex-shrink: 0; }
+  .stats { display: flex; gap: 16px; margin-top: 10px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+  .stats b { color: var(--text); font-size: 15px; display: block; margin-top: 2px; text-transform: none; letter-spacing: 0; }
+  .items { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; font-size: 11px; color: var(--muted); line-height: 1.7; }
+  .items .lbl { text-transform: uppercase; letter-spacing: .5px; font-size: 10px; margin-bottom: 4px; }
+  .item { display: flex; justify-content: space-between; gap: 8px; }
+  .item .pct { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+  tr:hover td { background: rgba(255,255,255,.02); }
+  .up { color: var(--a); font-weight: 600; }
+  .down { color: var(--d); font-weight: 600; }
+  .flat { color: var(--muted); }
+  .note { color: var(--muted); font-size: 12px; margin-bottom: 14px; font-style: italic; }
+  .tierchange { font-weight: 700; }
+  footer { padding: 18px 32px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); line-height: 1.6; }
+  footer a { color: var(--b); text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>DEADLOCK <span>TIER TRACKER</span></h1>
+  <div class="sub" id="sub"></div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="tier">Tier Tracker</div>
+  <div class="tab" data-tab="diff">Patch Diff</div>
+</div>
+
+<div class="panel active" id="panel-tier">
+  <div class="controls">
+    <input id="search" placeholder="search hero...">
+    <select id="sort">
+      <option value="score">sort: score</option>
+      <option value="winrate">sort: winrate</option>
+      <option value="pickrate">sort: pickrate</option>
+      <option value="matches">sort: matches</option>
+      <option value="name">sort: name</option>
+    </select>
+    <div id="tierfilters" style="display:flex;gap:6px;"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="panel" id="panel-diff">
+  <div class="note" id="diffnote"></div>
+  <table>
+    <thead><tr><th>Hero</th><th>Tier</th><th>Winrate &Delta;</th><th>Pickrate &Delta;</th><th>Matches</th></tr></thead>
+    <tbody id="difftbody"></tbody>
+  </table>
+</div>
+
+<footer>
+  data: <a href="https://api.deadlock-api.com" target="_blank">api.deadlock-api.com</a> &middot;
+  tiers: 70% winrate / 30% pickrate percentile, 1000-match floor &middot;
+  by <a href="https://twitter.com/SmileyJKR_DL" target="_blank">SmileyJKR_DL</a>
+</footer>
+
+<script>
+const DATA = __DATA__;
+const DIFF = __DIFF__;
+const TIER_COLORS = { S: '#ffb347', A: '#7ec850', B: '#4da3ff', C: '#9aa0a6', D: '#ff5d5d' };
+
+const fmt = n => n.toLocaleString('en-US');
+const pct = n => n.toFixed(1) + '%';
+const delta = n => (n > 0 ? '+' : '') + n.toFixed(2) + 'pp';
+
+
+// ---- header ----
+const totalMatches = DATA.heroes.reduce((s, h) => s + h.matches, 0);
+document.getElementById('sub').textContent =
+  DATA.heroes.length + ' heroes \u00b7 ' + fmt(totalMatches) + ' matches \u00b7 snapshot ' + DATA.date;
+
+// ---- tabs ----
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById('panel-' + t.dataset.tab).classList.add('active');
+}));
+
+// ---- tier filter buttons ----
+let activeTier = 'all';
+const tf = document.getElementById('tierfilters');
+['all', 'S', 'A', 'B', 'C', 'D'].forEach(t => {
+  const b = document.createElement('button');
+  b.className = 'tierbtn' + (t === 'all' ? ' active' : '');
+  b.textContent = t === 'all' ? 'ALL' : t;
+  b.addEventListener('click', () => {
+    activeTier = t;
+    tf.querySelectorAll('.tierbtn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    renderGrid();
+  });
+  tf.appendChild(b);
+});
+
+// ---- tier tracker grid ----
+function renderGrid() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const sort = document.getElementById('sort').value;
+  let heroes = DATA.heroes.filter(h =>
+    (activeTier === 'all' || h.tier === activeTier) &&
+    h.name.toLowerCase().includes(q));
+  const sorters = {
+    score: (a, b) => b.score - a.score,
+    winrate: (a, b) => b.winrate - a.winrate,
+    pickrate: (a, b) => b.pickrate - a.pickrate,
+    matches: (a, b) => b.matches - a.matches,
+    name: (a, b) => a.name.localeCompare(b.name),
+  };
+  heroes.sort(sorters[sort]);
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  heroes.forEach(h => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    const items = (h.top_items || []).map(i =>
+      '<div class="item"><span>' + i.name + '</span>' +
+      '<span class="pct">' + i.pick.toFixed(1) + '% pick</span></div>').join('');
+    card.innerHTML =
+      '<div class="imgwrap"><img src="' + h.image + '" alt="' + h.name + '" loading="lazy" ' +
+        'onerror="this.style.display=\'none\'"></div>' +
+      '<div class="body">' +
+        '<div class="name"><span>' + h.name + '</span>' +
+          '<span class="badge" style="background:' + TIER_COLORS[h.tier] + '">' + h.tier + '</span></div>' +
+        '<div class="stats">' +
+          '<div>winrate<b>' + pct(h.winrate) + '</b></div>' +
+          '<div>pickrate<b>' + pct(h.pickrate) + '</b></div>' +
+          '<div>matches<b>' + fmt(h.matches) + '</b></div>' +
+        '</div>' +
+        (items ? '<div class="items"><div class="lbl">top items</div>' + items + '</div>' : '') +
+      '</div>';
+    grid.appendChild(card);
+  });
+}
+document.getElementById('search').addEventListener('input', renderGrid);
+document.getElementById('sort').addEventListener('change', renderGrid);
+renderGrid();
+
+// ---- patch diff ----
+const dn = document.getElementById('diffnote');
+if (DIFF.note) dn.textContent = DIFF.note;
+const rows = DIFF.rows.slice().sort((a, b) => b.winrate_delta - a.winrate_delta);
+document.getElementById('difftbody').innerHTML = rows.map(r => {
+  const cls = r.winrate_delta > 0.05 ? 'up' : (r.winrate_delta < -0.05 ? 'down' : 'flat');
+  const tc = r.tier_change.includes('\u2192')
+    ? '<span class="tierchange">' + r.tier_change + '</span>' : r.tier_change;
+  return '<tr><td>' + r.name + '</td><td>' + tc + '</td>' +
+    '<td class="' + cls + '">' + delta(r.winrate_delta) + '</td>' +
+    '<td class="' + cls + '">' + delta(r.pickrate_delta) + '</td>' +
+    '<td>' + fmt(r.matches) + '</td></tr>';
+}).join('');
+</script>
+</body>
+</html>

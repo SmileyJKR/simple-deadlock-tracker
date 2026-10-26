@@ -1,0 +1,1259 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-10-20T03:31:31+00:00",
+ "latest_patch": {
+  "title": "09-29-2026",
+  "pub_date": "2026-10-15T03:12:00Z",
+  "link": "https://forums.playdeadlock.com/threads/09-29-2026.166726/"
+ },
+ "total_matches": 26722801,
+ "heroes": [
+  {
+   "id": 1,
+   "name": "Infernus",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/inferno_card.png",
+   "matches": 890021,
+   "wins": 435455,
+   "winrate": 48.93,
+   "pickrate": 3.33,
+   "top_items": [
+    {
+     "name": "Improved Spirit",
+     "pick": 68.3,
+     "wr": 50.5
+    },
+    {
+     "name": "Health Stealing Magic",
+     "pick": 63.7,
+     "wr": 50.8
+    },
+    {
+     "name": "Escalating Exposure",
+     "pick": 61.0,
+     "wr": 53.7
+    }
+   ],
+   "score": 0.6071,
+   "tier": "B"
+  },
+  {
+   "id": 2,
+   "name": "Seven",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/gigawatt_card.png",
+   "matches": 752853,
+   "wins": 414863,
+   "winrate": 55.11,
+   "pickrate": 2.82,
+   "top_items": [
+    {
+     "name": "Non Player Bonus",
+     "pick": 64.3,
+     "wr": 55.3
+    },
+    {
+     "name": "Magic Vulnerability",
+     "pick": 53.0,
+     "wr": 57.5
+    },
+    {
+     "name": "Healbane",
+     "pick": 48.6,
+     "wr": 57.0
+    }
+   ],
+   "score": 0.8714,
+   "tier": "A"
+  },
+  {
+   "id": 3,
+   "name": "Vindicta",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/hornet_card.png",
+   "matches": 719808,
+   "wins": 359522,
+   "winrate": 49.95,
+   "pickrate": 2.69,
+   "top_items": [
+    {
+     "name": "Rapid Recharge",
+     "pick": 71.6,
+     "wr": 50.9
+    },
+    {
+     "name": "Blitz Bullets",
+     "pick": 58.2,
+     "wr": 51.3
+    },
+    {
+     "name": "Pristine Emblem",
+     "pick": 54.9,
+     "wr": 50.6
+    }
+   ],
+   "score": 0.6405,
+   "tier": "B"
+  },
+  {
+   "id": 4,
+   "name": "Lady Geist",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/spectre_card.png",
+   "matches": 568676,
+   "wins": 290138,
+   "winrate": 51.02,
+   "pickrate": 2.13,
+   "top_items": [
+    {
+     "name": "Resonant Healing",
+     "pick": 69.6,
+     "wr": 54.6
+    },
+    {
+     "name": "Health Stealing Magic",
+     "pick": 49.0,
+     "wr": 55.9
+    },
+    {
+     "name": "Endurance",
+     "pick": 45.9,
+     "wr": 52.3
+    }
+   ],
+   "score": 0.6357,
+   "tier": "B"
+  },
+  {
+   "id": 6,
+   "name": "Abrams",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/bull_card.png",
+   "matches": 639392,
+   "wins": 326205,
+   "winrate": 51.02,
+   "pickrate": 2.39,
+   "top_items": [
+    {
+     "name": "Melee Charge",
+     "pick": 55.8,
+     "wr": 51.1
+    },
+    {
+     "name": "Bullet Resist Shredder",
+     "pick": 38.1,
+     "wr": 53.5
+    },
+    {
+     "name": "Phantom Strike",
+     "pick": 32.6,
+     "wr": 58.9
+    }
+   ],
+   "score": 0.6714,
+   "tier": "B"
+  },
+  {
+   "id": 7,
+   "name": "Wraith",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/wraith_card.png",
+   "matches": 717840,
+   "wins": 363930,
+   "winrate": 50.7,
+   "pickrate": 2.69,
+   "top_items": [
+    {
+     "name": "Non Player Bonus",
+     "pick": 68.0,
+     "wr": 48.7
+    },
+    {
+     "name": "Magic Storm",
+     "pick": 59.0,
+     "wr": 49.8
+    },
+    {
+     "name": "Chain Lightning",
+     "pick": 52.4,
+     "wr": 49.8
+    }
+   ],
+   "score": 0.6905,
+   "tier": "A"
+  },
+  {
+   "id": 8,
+   "name": "McGinnis",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/engineer_card.png",
+   "matches": 295070,
+   "wins": 142072,
+   "winrate": 48.15,
+   "pickrate": 1.1,
+   "top_items": [
+    {
+     "name": "Escalating Exposure",
+     "pick": 46.2,
+     "wr": 53.2
+    },
+    {
+     "name": "Non Player Bonus",
+     "pick": 43.0,
+     "wr": 49.0
+    },
+    {
+     "name": "Magic Vulnerability",
+     "pick": 36.6,
+     "wr": 52.3
+    }
+   ],
+   "score": 0.331,
+   "tier": "C"
+  },
+  {
+   "id": 10,
+   "name": "Paradox",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/chrono_card.png",
+   "matches": 606740,
+   "wins": 279362,
+   "winrate": 46.04,
+   "pickrate": 2.27,
+   "top_items": [
+    {
+     "name": "Sharpshooter",
+     "pick": 51.5,
+     "wr": 46.5
+    },
+    {
+     "name": "Mystic Reverb",
+     "pick": 50.7,
+     "wr": 52.4
+    },
+    {
+     "name": "Headshot Booster",
+     "pick": 48.1,
+     "wr": 45.6
+    }
+   ],
+   "score": 0.3,
+   "tier": "C"
+  },
+  {
+   "id": 11,
+   "name": "Dynamo",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/sumo_card.png",
+   "matches": 561071,
+   "wins": 293048,
+   "winrate": 52.23,
+   "pickrate": 2.1,
+   "top_items": [
+    {
+     "name": "Rapid Recharge",
+     "pick": 50.6,
+     "wr": 52.9
+    },
+    {
+     "name": "Transcendent Cooldown",
+     "pick": 44.1,
+     "wr": 53.8
+    },
+    {
+     "name": "Headshot Booster",
+     "pick": 43.3,
+     "wr": 52.0
+    }
+   ],
+   "score": 0.6714,
+   "tier": "B"
+  },
+  {
+   "id": 12,
+   "name": "Kelvin",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/kelvin_card.png",
+   "matches": 349963,
+   "wins": 189461,
+   "winrate": 54.14,
+   "pickrate": 1.31,
+   "top_items": [
+    {
+     "name": "Boundless Spirit",
+     "pick": 60.7,
+     "wr": 58.4
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 50.2,
+     "wr": 54.4
+    },
+    {
+     "name": "Magic Vulnerability",
+     "pick": 39.8,
+     "wr": 57.3
+    }
+   ],
+   "score": 0.6429,
+   "tier": "B"
+  },
+  {
+   "id": 13,
+   "name": "Haze",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/haze_card.png",
+   "matches": 1100100,
+   "wins": 595689,
+   "winrate": 54.15,
+   "pickrate": 4.12,
+   "top_items": [
+    {
+     "name": "Vampire",
+     "pick": 48.2,
+     "wr": 54.5
+    },
+    {
+     "name": "Magic Storm",
+     "pick": 45.4,
+     "wr": 56.1
+    },
+    {
+     "name": "Proc Silence",
+     "pick": 40.3,
+     "wr": 62.8
+    }
+   ],
+   "score": 0.9095,
+   "tier": "S"
+  },
+  {
+   "id": 14,
+   "name": "Holliday",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/astro_card.png",
+   "matches": 487959,
+   "wins": 233321,
+   "winrate": 47.82,
+   "pickrate": 1.83,
+   "top_items": [
+    {
+     "name": "Headshot Booster",
+     "pick": 59.4,
+     "wr": 47.0
+    },
+    {
+     "name": "Rapid Recharge",
+     "pick": 53.3,
+     "wr": 46.6
+    },
+    {
+     "name": "Rechargingbullets",
+     "pick": 40.2,
+     "wr": 47.1
+    }
+   ],
+   "score": 0.3929,
+   "tier": "C"
+  },
+  {
+   "id": 15,
+   "name": "Bebop",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/bebop_card.png",
+   "matches": 876337,
+   "wins": 416573,
+   "winrate": 47.54,
+   "pickrate": 3.28,
+   "top_items": [
+    {
+     "name": "Endurance",
+     "pick": 41.2,
+     "wr": 48.0
+    },
+    {
+     "name": "Cardio Calibrator",
+     "pick": 40.2,
+     "wr": 48.6
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 32.2,
+     "wr": 47.6
+    }
+   ],
+   "score": 0.5167,
+   "tier": "B"
+  },
+  {
+   "id": 16,
+   "name": "Calico",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/nano_card.png",
+   "matches": 431205,
+   "wins": 212382,
+   "winrate": 49.25,
+   "pickrate": 1.61,
+   "top_items": [
+    {
+     "name": "Lifestrike Gauntlets",
+     "pick": 92.7,
+     "wr": 51.7
+    },
+    {
+     "name": "Spirit Snatch",
+     "pick": 78.8,
+     "wr": 52.2
+    },
+    {
+     "name": "Cold Front",
+     "pick": 67.8,
+     "wr": 51.0
+    }
+   ],
+   "score": 0.4548,
+   "tier": "B"
+  },
+  {
+   "id": 17,
+   "name": "Grey Talon",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/archer_card.png",
+   "matches": 363438,
+   "wins": 172019,
+   "winrate": 47.33,
+   "pickrate": 1.36,
+   "top_items": [
+    {
+     "name": "Magic Tempo",
+     "pick": 58.8,
+     "wr": 48.1
+    },
+    {
+     "name": "High Velocity Mag",
+     "pick": 54.4,
+     "wr": 48.8
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 54.0,
+     "wr": 48.4
+    }
+   ],
+   "score": 0.2905,
+   "tier": "C"
+  },
+  {
+   "id": 18,
+   "name": "Mo & Krill",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/digger_card.png",
+   "matches": 549653,
+   "wins": 277674,
+   "winrate": 50.52,
+   "pickrate": 2.06,
+   "top_items": [
+    {
+     "name": "Magic Burst",
+     "pick": 89.5,
+     "wr": 54.5
+    },
+    {
+     "name": "Tech Damage Pulse",
+     "pick": 70.0,
+     "wr": 56.4
+    },
+    {
+     "name": "Cold Front",
+     "pick": 49.8,
+     "wr": 53.6
+    }
+   ],
+   "score": 0.581,
+   "tier": "B"
+  },
+  {
+   "id": 19,
+   "name": "Shiv",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/shiv_card.png",
+   "matches": 629597,
+   "wins": 280556,
+   "winrate": 44.56,
+   "pickrate": 2.36,
+   "top_items": [
+    {
+     "name": "Resonant Healing",
+     "pick": 79.5,
+     "wr": 44.8
+    },
+    {
+     "name": "Medic Bullets",
+     "pick": 60.4,
+     "wr": 43.8
+    },
+    {
+     "name": "Close Range",
+     "pick": 53.2,
+     "wr": 43.5
+    }
+   ],
+   "score": 0.1643,
+   "tier": "D"
+  },
+  {
+   "id": 20,
+   "name": "Ivy",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/tengu_card.png",
+   "matches": 533944,
+   "wins": 283401,
+   "winrate": 53.08,
+   "pickrate": 2.0,
+   "top_items": [
+    {
+     "name": "Clip Size",
+     "pick": 63.1,
+     "wr": 52.3
+    },
+    {
+     "name": "Chain Lightning",
+     "pick": 50.2,
+     "wr": 52.0
+    },
+    {
+     "name": "Magic Reach",
+     "pick": 29.4,
+     "wr": 54.0
+    }
+   ],
+   "score": 0.6905,
+   "tier": "A"
+  },
+  {
+   "id": 25,
+   "name": "Warden",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/warden_card.png",
+   "matches": 269513,
+   "wins": 125118,
+   "winrate": 46.42,
+   "pickrate": 1.01,
+   "top_items": [
+    {
+     "name": "High Velocity Mag",
+     "pick": 74.1,
+     "wr": 49.1
+    },
+    {
+     "name": "Quick Silver",
+     "pick": 61.5,
+     "wr": 48.9
+    },
+    {
+     "name": "Tech Overflow",
+     "pick": 54.7,
+     "wr": 53.1
+    }
+   ],
+   "score": 0.1738,
+   "tier": "C"
+  },
+  {
+   "id": 27,
+   "name": "Yamato",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/yamato_card.png",
+   "matches": 601638,
+   "wins": 290060,
+   "winrate": 48.21,
+   "pickrate": 2.25,
+   "top_items": [
+    {
+     "name": "Lifestrike Gauntlets",
+     "pick": 64.3,
+     "wr": 50.5
+    },
+    {
+     "name": "Medic Bullets",
+     "pick": 59.6,
+     "wr": 50.4
+    },
+    {
+     "name": "Spirit Snatch",
+     "pick": 53.9,
+     "wr": 51.6
+    }
+   ],
+   "score": 0.4762,
+   "tier": "B"
+  },
+  {
+   "id": 31,
+   "name": "Lash",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/lash_card.png",
+   "matches": 862667,
+   "wins": 440983,
+   "winrate": 51.12,
+   "pickrate": 3.23,
+   "top_items": [
+    {
+     "name": "Headshot Booster",
+     "pick": 69.8,
+     "wr": 50.5
+    },
+    {
+     "name": "Boundless Spirit",
+     "pick": 57.1,
+     "wr": 53.0
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 53.1,
+     "wr": 50.4
+    }
+   ],
+   "score": 0.7762,
+   "tier": "A"
+  },
+  {
+   "id": 35,
+   "name": "Viscous",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/viscous_card.png",
+   "matches": 332716,
+   "wins": 152521,
+   "winrate": 45.84,
+   "pickrate": 1.25,
+   "top_items": [
+    {
+     "name": "Magic Burst",
+     "pick": 53.7,
+     "wr": 45.4
+    },
+    {
+     "name": "Magic Reach",
+     "pick": 45.5,
+     "wr": 46.7
+    },
+    {
+     "name": "Lifestrike Gauntlets",
+     "pick": 39.7,
+     "wr": 49.4
+    }
+   ],
+   "score": 0.119,
+   "tier": "D"
+  },
+  {
+   "id": 50,
+   "name": "Pocket",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/synth_card.png",
+   "matches": 476190,
+   "wins": 215017,
+   "winrate": 45.15,
+   "pickrate": 1.78,
+   "top_items": [
+    {
+     "name": "Magic Burst",
+     "pick": 87.6,
+     "wr": 46.0
+    },
+    {
+     "name": "Spirit Burn",
+     "pick": 65.4,
+     "wr": 50.1
+    },
+    {
+     "name": "Non Player Bonus Sacrifice",
+     "pick": 62.0,
+     "wr": 45.4
+    }
+   ],
+   "score": 0.119,
+   "tier": "D"
+  },
+  {
+   "id": 52,
+   "name": "Mirage",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/mirage_card.png",
+   "matches": 298087,
+   "wins": 132948,
+   "winrate": 44.6,
+   "pickrate": 1.12,
+   "top_items": [
+    {
+     "name": "Mystic Regeneration",
+     "pick": 80.1,
+     "wr": 45.4
+    },
+    {
+     "name": "Escalating Exposure",
+     "pick": 64.3,
+     "wr": 48.4
+    },
+    {
+     "name": "Magic Vulnerability",
+     "pick": 60.8,
+     "wr": 46.2
+    }
+   ],
+   "score": 0.0381,
+   "tier": "D"
+  },
+  {
+   "id": 58,
+   "name": "Vyper",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/kali_card.png",
+   "matches": 356998,
+   "wins": 170607,
+   "winrate": 47.79,
+   "pickrate": 1.34,
+   "top_items": [
+    {
+     "name": "Burst Fire",
+     "pick": 58.7,
+     "wr": 49.5
+    },
+    {
+     "name": "Improved Spirit",
+     "pick": 56.0,
+     "wr": 47.4
+    },
+    {
+     "name": "Split Shot",
+     "pick": 46.4,
+     "wr": 47.4
+    }
+   ],
+   "score": 0.3333,
+   "tier": "C"
+  },
+  {
+   "id": 60,
+   "name": "Sinclair",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/magician_card.png",
+   "matches": 332333,
+   "wins": 152417,
+   "winrate": 45.86,
+   "pickrate": 1.24,
+   "top_items": [
+    {
+     "name": "Rapid Recharge",
+     "pick": 56.5,
+     "wr": 42.6
+    },
+    {
+     "name": "High Velocity Mag",
+     "pick": 50.4,
+     "wr": 42.4
+    },
+    {
+     "name": "Magic Reach",
+     "pick": 50.3,
+     "wr": 43.5
+    }
+   ],
+   "score": 0.1286,
+   "tier": "D"
+  },
+  {
+   "id": 63,
+   "name": "Mina",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/vampirebat_card.png",
+   "matches": 919868,
+   "wins": 428073,
+   "winrate": 46.54,
+   "pickrate": 3.44,
+   "top_items": [
+    {
+     "name": "Improved Spirit",
+     "pick": 90.8,
+     "wr": 45.3
+    },
+    {
+     "name": "Magic Burst",
+     "pick": 86.7,
+     "wr": 45.5
+    },
+    {
+     "name": "Improved Stamina",
+     "pick": 60.2,
+     "wr": 45.4
+    }
+   ],
+   "score": 0.4548,
+   "tier": "C"
+  },
+  {
+   "id": 64,
+   "name": "Drifter",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/drifter_card.png",
+   "matches": 889215,
+   "wins": 445560,
+   "winrate": 50.11,
+   "pickrate": 3.33,
+   "top_items": [
+    {
+     "name": "Lifestrike Gauntlets",
+     "pick": 60.2,
+     "wr": 50.8
+    },
+    {
+     "name": "Spirit Snatch",
+     "pick": 44.3,
+     "wr": 51.7
+    },
+    {
+     "name": "Sprint Booster",
+     "pick": 28.7,
+     "wr": 51.5
+    }
+   ],
+   "score": 0.7071,
+   "tier": "A"
+  },
+  {
+   "id": 65,
+   "name": "Venator",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/priest_card.png",
+   "matches": 951156,
+   "wins": 448079,
+   "winrate": 47.11,
+   "pickrate": 3.56,
+   "top_items": [
+    {
+     "name": "Medic Bullets",
+     "pick": 68.5,
+     "wr": 47.0
+    },
+    {
+     "name": "Close Range",
+     "pick": 60.7,
+     "wr": 47.2
+    },
+    {
+     "name": "Vampire",
+     "pick": 54.6,
+     "wr": 47.2
+    }
+   ],
+   "score": 0.5024,
+   "tier": "B"
+  },
+  {
+   "id": 66,
+   "name": "Victor",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/frank_card.png",
+   "matches": 658951,
+   "wins": 358169,
+   "winrate": 54.35,
+   "pickrate": 2.47,
+   "top_items": [
+    {
+     "name": "Endurance",
+     "pick": 82.0,
+     "wr": 57.7
+    },
+    {
+     "name": "Improved Spirit",
+     "pick": 71.6,
+     "wr": 57.6
+    },
+    {
+     "name": "Health Stealing Magic",
+     "pick": 67.7,
+     "wr": 58.4
+    }
+   ],
+   "score": 0.8119,
+   "tier": "A"
+  },
+  {
+   "id": 67,
+   "name": "Paige",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/bookworm_card.png",
+   "matches": 807926,
+   "wins": 456137,
+   "winrate": 56.46,
+   "pickrate": 3.02,
+   "top_items": [
+    {
+     "name": "High Velocity Mag",
+     "pick": 65.2,
+     "wr": 56.6
+    },
+    {
+     "name": "Transcendent Cooldown",
+     "pick": 48.4,
+     "wr": 58.0
+    },
+    {
+     "name": "Magic Reach",
+     "pick": 47.9,
+     "wr": 57.3
+    }
+   ],
+   "score": 0.8952,
+   "tier": "S"
+  },
+  {
+   "id": 69,
+   "name": "The Doorman",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/doorman_card.png",
+   "matches": 410967,
+   "wins": 188896,
+   "winrate": 45.96,
+   "pickrate": 1.54,
+   "top_items": [
+    {
+     "name": "Boundless Spirit",
+     "pick": 49.8,
+     "wr": 49.9
+    },
+    {
+     "name": "Rapid Recharge",
+     "pick": 45.3,
+     "wr": 46.2
+    },
+    {
+     "name": "High Velocity Mag",
+     "pick": 43.6,
+     "wr": 44.6
+    }
+   ],
+   "score": 0.181,
+   "tier": "C"
+  },
+  {
+   "id": 72,
+   "name": "Billy",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/punkgoat_card.png",
+   "matches": 681190,
+   "wins": 323156,
+   "winrate": 47.44,
+   "pickrate": 2.55,
+   "top_items": [
+    {
+     "name": "Spirit Snatch",
+     "pick": 53.1,
+     "wr": 52.6
+    },
+    {
+     "name": "Crushing Fists",
+     "pick": 51.1,
+     "wr": 54.7
+    },
+    {
+     "name": "Boxing Glove",
+     "pick": 44.1,
+     "wr": 50.1
+    }
+   ],
+   "score": 0.4429,
+   "tier": "C"
+  },
+  {
+   "id": 76,
+   "name": "Graves",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/necro_card.png",
+   "matches": 926432,
+   "wins": 526307,
+   "winrate": 56.81,
+   "pickrate": 3.47,
+   "top_items": [
+    {
+     "name": "Medic Bullets",
+     "pick": 74.5,
+     "wr": 57.9
+    },
+    {
+     "name": "Boundless Spirit",
+     "pick": 44.7,
+     "wr": 59.7
+    },
+    {
+     "name": "Arcane Extension",
+     "pick": 37.3,
+     "wr": 59.2
+    }
+   ],
+   "score": 0.9619,
+   "tier": "S"
+  },
+  {
+   "id": 77,
+   "name": "Apollo",
+   "type": "assassin",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/fencer_card.png",
+   "matches": 607927,
+   "wins": 302033,
+   "winrate": 49.68,
+   "pickrate": 2.27,
+   "top_items": [
+    {
+     "name": "Magic Burst",
+     "pick": 78.8,
+     "wr": 50.9
+    },
+    {
+     "name": "Healbane",
+     "pick": 47.5,
+     "wr": 51.7
+    },
+    {
+     "name": "Healing Booster",
+     "pick": 35.5,
+     "wr": 49.3
+    }
+   ],
+   "score": 0.55,
+   "tier": "B"
+  },
+  {
+   "id": 78,
+   "name": "Deadman Danny",
+   "type": "marksman",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/deadpack_card.png",
+   "matches": 454117,
+   "wins": 205466,
+   "winrate": 45.25,
+   "pickrate": 1.7,
+   "top_items": [
+    {
+     "name": "High Velocity Mag",
+     "pick": 86.4,
+     "wr": 34.2
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 72.7,
+     "wr": 37.5
+    },
+    {
+     "name": "Magic Burst",
+     "pick": 59.1,
+     "wr": 38.5
+    }
+   ],
+   "score": 0.1286,
+   "tier": "D"
+  },
+  {
+   "id": 79,
+   "name": "Rem",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/familiar_card.png",
+   "matches": 836813,
+   "wins": 392335,
+   "winrate": 46.88,
+   "pickrate": 3.13,
+   "top_items": [
+    {
+     "name": "Boundless Spirit",
+     "pick": 39.7,
+     "wr": 52.1
+    },
+    {
+     "name": "Rapid Recharge",
+     "pick": 36.2,
+     "wr": 50.2
+    },
+    {
+     "name": "Healbuff",
+     "pick": 36.0,
+     "wr": 52.4
+    }
+   ],
+   "score": 0.4357,
+   "tier": "C"
+  },
+  {
+   "id": 80,
+   "name": "Silver",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/werewolf_card.png",
+   "matches": 664966,
+   "wins": 305796,
+   "winrate": 45.99,
+   "pickrate": 2.49,
+   "top_items": [
+    {
+     "name": "Medic Bullets",
+     "pick": 67.1,
+     "wr": 47.8
+    },
+    {
+     "name": "Slowing Bullets",
+     "pick": 49.1,
+     "wr": 48.0
+    },
+    {
+     "name": "Boxing Glove",
+     "pick": 47.5,
+     "wr": 48.5
+    }
+   ],
+   "score": 0.319,
+   "tier": "C"
+  },
+  {
+   "id": 81,
+   "name": "Celeste",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/unicorn_card.png",
+   "matches": 694806,
+   "wins": 340546,
+   "winrate": 49.01,
+   "pickrate": 2.6,
+   "top_items": [
+    {
+     "name": "High Velocity Mag",
+     "pick": 80.9,
+     "wr": 49.7
+    },
+    {
+     "name": "Endurance",
+     "pick": 66.3,
+     "wr": 49.9
+    },
+    {
+     "name": "Resonant Healing",
+     "pick": 62.2,
+     "wr": 49.5
+    }
+   ],
+   "score": 0.5667,
+   "tier": "B"
+  },
+  {
+   "id": 84,
+   "name": "Rat King",
+   "type": "brawler",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/ratking_card.png",
+   "matches": 1271975,
+   "wins": 730439,
+   "winrate": 57.43,
+   "pickrate": 4.76,
+   "top_items": [
+    {
+     "name": "High Velocity Mag",
+     "pick": 75.6,
+     "wr": 61.5
+    },
+    {
+     "name": "Cardio Calibrator",
+     "pick": 60.3,
+     "wr": 62.0
+    },
+    {
+     "name": "Chonky",
+     "pick": 52.1,
+     "wr": 63.0
+    }
+   ],
+   "score": 1.0,
+   "tier": "S"
+  },
+  {
+   "id": 85,
+   "name": "Solomon",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/chessmaster_card.png",
+   "matches": 522693,
+   "wins": 238952,
+   "winrate": 45.72,
+   "pickrate": 1.96,
+   "top_items": [
+    {
+     "name": "Tech Range",
+     "pick": 59.6,
+     "wr": 64.3
+    },
+    {
+     "name": "Improved Stamina",
+     "pick": 53.2,
+     "wr": 60.0
+    },
+    {
+     "name": "Magic Tempo",
+     "pick": 48.9,
+     "wr": 52.2
+    }
+   ],
+   "score": 0.1667,
+   "tier": "C"
+  },
+  {
+   "id": 86,
+   "name": "Violet",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/artist_card.png",
+   "matches": 252276,
+   "wins": 125559,
+   "winrate": 49.77,
+   "pickrate": 0.94,
+   "top_items": [
+    {
+     "name": "Rapid Recharge",
+     "pick": 51.1,
+     "wr": 39.1
+    },
+    {
+     "name": "Toxic Bullets",
+     "pick": 46.7,
+     "wr": 66.7
+    },
+    {
+     "name": "Cooldown Reduction",
+     "pick": 46.7,
+     "wr": 76.2
+    }
+   ],
+   "score": 0.4167,
+   "tier": "C"
+  },
+  {
+   "id": 88,
+   "name": "Baba",
+   "type": "mystic",
+   "image": "https://assets-bucket.deadlock-api.com/assets-api-res/images/heroes/baba_card.png",
+   "matches": 567714,
+   "wins": 299331,
+   "winrate": 52.73,
+   "pickrate": 2.12,
+   "top_items": [
+    {
+     "name": "Extra Charge",
+     "pick": 83.3,
+     "wr": 57.1
+    },
+    {
+     "name": "Magic Shield",
+     "pick": 42.9,
+     "wr": 50.0
+    },
+    {
+     "name": "Soaring Spirit",
+     "pick": 42.9,
+     "wr": 66.7
+    }
+   ],
+   "score": 0.6952,
+   "tier": "A"
+  }
+ ]
+}
