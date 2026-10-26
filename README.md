@@ -18,7 +18,6 @@ patch-day workflow: snapshot the meta, see what a patch moved, draft the tweet.
    computes the diff against the previous snapshot, and builds `site.html`
    from `site_template.html`.
 3. **diff.py** — prints the current patch diff as a readable table.
-4. **tweet.py** — drafts the patch-day tweet from `data/diff.json`.
 
 ## The tier math
 
@@ -38,8 +37,7 @@ The blend is a compromise, and the weights are tunable in `config.json`.
 
 Each snapshot is compared against the previous one to produce
 `data/diff.json`: per-hero winrate/pickrate deltas (in percentage points)
-and tier changes (e.g. `B -> A`). This is what the "Patch Diff" tab and
-`tweet.py` consume.
+and tier changes (e.g. `B -> A`). This is what the "Patch Diff" tab consume.
 
 **DEMO mode:** the first snapshot has no previous snapshot to diff
 against, so `snapshot.py` generates a simulated previous snapshot and
@@ -66,7 +64,6 @@ internet to show images. Everything else works offline.
 python fetch.py      # refresh raw/ from the API
 python snapshot.py   # compute tiers + diff, rebuild site.html
 python diff.py       # print the diff as a table
-python tweet.py      # draft the patch-day tweet
 ```
 
 `snapshot.py` is the one you usually run. It's idempotent for a given
@@ -78,7 +75,6 @@ day: re-running it on the same date overwrites that day's snapshot.
 fetch.py            API -> raw/
 snapshot.py         raw/ -> tiers, snapshot, diff, site.html  (main)
 diff.py             print the diff
-tweet.py            draft the tweet
 config.json         min_matches + tier weights
 site_template.html  the site template (tokens __DATA__ / __DIFF__)
 site.html           the built site (what you open / deploy)
